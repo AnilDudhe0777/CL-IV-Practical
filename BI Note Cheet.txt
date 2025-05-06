@@ -1,0 +1,45 @@
+BI1) Import Data from different Sources such as (Excel, Sql Server, Oracle etc.) and load in targeted
+system.(Download Dataset as Adventureworks, Northwind, Foodmart)
+https://services.odata.org/V3/Northwind/Northwind.svc/
+
+BI3) Perform the Extraction Transformation and Loading (ETL) process
+to construct the database in the Sql server / Power BI.
+https://www.youtube.com/watch?v=uRB_5RuV0ds&list=PLf2Wj8X3RbBRy-zlDkrbMPuFbb6peTeTG&index=6
+
+BI4)https://youtu.be/gTK5rNhWJyA?si=DLfELg3c76MZnF2k
+Advance Excel
+
+TasK: In Transformation are:
+
+Data Feed URL :- https://services.odata.org/Northwind/Northwind.svc
+from list of tables we will select orders and products
+
+1)Remove other columns to only display columns of interest
+(we had kept following columns of product table
+productid, productname, qtyperunit, unitinstock)
+
+2)Change the data type of the UnitsInStock column
+(change to whole number)
+
+3)Expand the Order Details table
+(in order table select order_details column and choose all columns of
+order_details table)
+
+4)Calculate the line total for each Order_Details row
+(create linetotal as a new custom column with formula as
+order_details.unitprice*order_details.qty)
+
+5)Rename and reorder columns in the query
+(shift linetotal column after shipcountry)
+Combine the Products and Total Sales queries
+
+
+OR
+
+1)1) Remove other columns to only display columns of interest
+2). Change the data type of the UnitsInStock column
+3)Expand the Order_Details table
+4)Calculate the line total for each Order_Details row
+5)Rename and reorder columns in the query
+6)Combine the Products and Total Sales queries
+
